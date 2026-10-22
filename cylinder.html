@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cylinder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Cylinder</h1>
+        <div class="column">
+            <p>
+                A cylinder is a fundamental 3D shape in geometry, which has two parallel circular bases at equal distances. LPG gas cylinder is one such example of a cylinder in real life.
+            </p>
+            <p>
+                The radius of a cylinder (r) is the radius of the 2 bases found at the top and the bottom of the cylinder. The height of the cylinder (h) is the distance between the two circular bases is called the. The volume of the cylinder (v) can be derived as shown in the picture below.
+            </p>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="column">
+            <img src="asset/tank.jpg" height="150" alt="Cylinder tank">
+            <p>
+                Cylinder tank
+            </p>
+            <p>
+                Source: <a href="https://pixabay.com/photos/factory-storage-tank-chemistry-644982/" target="_blank">Pixabay></a>
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>
+                Cylinder volume
+            </h2>
+            <img src="asset/cylinder.png" height="150" alt="Cylinder tank">
+        </div>
+
+        <div class="column">
+            <h2>
+                Volume Calculator
+            </h2>
+            <form id="volumeCalculator">
+                <p><label for="inRadius">Radius:</label>
+                    <input type="number" id="inRadius" min="0.000001" step="any" required></p>
+                <p><label for="inHeight">Height:</label>
+                    <input type="number" id="inHeight" min="0.000001" step="any" required></p>
+                <p><label for="inUnit">Unit:</label>
+                    <select id="inUnit">
+                        <option value="1">cm</option>
+                        <option value="1000">mm</option>
+                    </select></p>
+                <p><button type="submit">Calculate</button></p>
+            </form>
+            <p id="result" role="status" aria-live="polite"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
